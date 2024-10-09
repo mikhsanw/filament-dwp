@@ -18,7 +18,7 @@ return new class extends Migration
 			$table->date("tanggal");
             $table->json("foto")->nullable();
 			$table->foreignUuid("bidang_id")->constrained();
-			$table->foreignUuid("user_id")->constrained();
+			$table->foreignId("user_id")->constrained();
             $table->timestamps();
 			$table->softDeletes();
         });
