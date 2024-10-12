@@ -59,7 +59,7 @@ class LaporanResource extends Resource
                 Tables\Columns\TextColumn::make('nama')
                 ->searchable()
                 ->sortable(),
-                Tables\Columns\TextColumn::make('deskripsi')
+                Tables\Columns\TextColumn::make('bidang.nama')
                 ->searchable()
                 ->sortable(),
             ])
