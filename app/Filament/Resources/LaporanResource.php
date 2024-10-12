@@ -33,9 +33,9 @@ class LaporanResource extends Resource
                     ->displayFormat('d F Y')
                     ->locale('id')
                     ->required(),
-                Forms\Components\RichEditor::make('deskripsi')
+                Forms\Components\Textarea::make('deskripsi')
                     ->required()
-                    ->maxLength(1024),
+                    ->maxLength(200),
                 Forms\Components\Select::make('bidang_id')
                     ->relationship('bidang', 'nama',
                     fn (Builder $query) => 
